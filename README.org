@@ -79,3 +79,9 @@ to the console the result and the time it took to run our linespace version.
   # Time: 125ns
   # array([2, 2.25, 2.5, 2.75, 3])
 #+END_SRC
+
+Some useful links:
+
+- https://habr.com/en/articles/436488/
+- https://en.cppreference.com/w/cpp/utility/functional/bind
+- https://learn.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-170#capture-clause
