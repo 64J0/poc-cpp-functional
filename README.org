@@ -1,0 +1,81 @@
+#+TITLE: POC C++ partial application
+#+DATE: [2024-08-20 ter]
+
+This repository holds a POC code showing how one can use partial applications in
+C++, along with a higher order function to compute the time it took to run
+another functions.
+
+It does implement the [[https://numpy.org/doc/stable/reference/generated/numpy.linspace.html][numpy.linespace]] function along with some helpers to print
+to the console the result and the time it took to run our linespace version.
+
+#+BEGIN_SRC bash
+  # I'm using g++ 11.4.0
+  g++ -O2 -o program.exe main.cpp
+
+  # Then execute
+  ./program.exe
+  # Sample result:
+  # ------------------------------------------------------------
+  #
+  # Partial application with std::bind:
+  # Time: 467ns
+  # array([0, 0, 0, 0, 0])
+  #
+  # Partial application with curied lambda functions:
+  # Time: 217ns
+  # array([0, 0, 0, 0, 0])
+  # ------------------------------------------------------------
+  #
+  # Partial application with std::bind:
+  # Time: 171ns
+  # array([0, 2, 4, 6])
+  #
+  # Partial application with curied lambda functions:
+  # Time: 154ns
+  # array([0, 2, 4, 6])
+  # ------------------------------------------------------------
+  #
+  # Partial application with std::bind:
+  # Time: 103ns
+  # array([0, 1.5, 3, 4.5])
+  #
+  # Partial application with curied lambda functions:
+  # Time: 134ns
+  # array([0, 1.5, 3, 4.5])
+  # ------------------------------------------------------------
+  #
+  # Partial application with std::bind:
+  # Time: 235ns
+  # array([0, 0.444444, 0.888889, 1.33333, 1.77778, 2.22222, 2.66667, 3.11111, 3.55556, 4])
+  #
+  # Partial application with curied lambda functions:
+  # Time: 275ns
+  # array([0, 0.444444, 0.888889, 1.33333, 1.77778, 2.22222, 2.66667, 3.11111, 3.55556, 4])
+  # ------------------------------------------------------------
+  #
+  # Partial application with std::bind:
+  # Time: 188ns
+  # array([0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6])
+  #
+  # Partial application with curied lambda functions:
+  # Time: 144ns
+  # array([0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6])
+  # ------------------------------------------------------------
+  #
+  # Partial application with std::bind:
+  # Time: 151ns
+  # array([2, 2.2, 2.4, 2.6, 2.8])
+  #
+  # Partial application with curied lambda functions:
+  # Time: 131ns
+  # array([2, 2.2, 2.4, 2.6, 2.8])
+  # ------------------------------------------------------------
+  #
+  # Partial application with std::bind:
+  # Time: 136ns
+  # array([2, 2.25, 2.5, 2.75, 3])
+  #
+  # Partial application with curied lambda functions:
+  # Time: 125ns
+  # array([2, 2.25, 2.5, 2.75, 3])
+#+END_SRC
