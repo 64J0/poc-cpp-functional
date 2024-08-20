@@ -16,68 +16,101 @@ to the console the result and the time it took to run our linespace version.
   ./program.exe
   # Sample result:
   # ------------------------------------------------------------
-  #
-  # Partial application with std::bind:
-  # Time: 467ns
+
+  # Time: 462ns
   # array([0, 0, 0, 0, 0])
-  #
-  # Partial application with curied lambda functions:
-  # Time: 217ns
+
+  # Partial application with curied lambda functions
+  # Time: 259ns
+  # array([0, 0, 0, 0, 0])
+
+  # Partial application with std::bind
+  # Time: 329ns
   # array([0, 0, 0, 0, 0])
   # ------------------------------------------------------------
-  #
-  # Partial application with std::bind:
-  # Time: 171ns
+
+  # Time: 173ns
   # array([0, 2, 4, 6])
-  #
-  # Partial application with curied lambda functions:
-  # Time: 154ns
+
+  # Partial application with curied lambda functions
+  # Time: 130ns
   # array([0, 2, 4, 6])
-  # ------------------------------------------------------------
-  #
-  # Partial application with std::bind:
-  # Time: 103ns
-  # array([0, 1.5, 3, 4.5])
-  #
-  # Partial application with curied lambda functions:
-  # Time: 134ns
-  # array([0, 1.5, 3, 4.5])
-  # ------------------------------------------------------------
-  #
-  # Partial application with std::bind:
-  # Time: 235ns
-  # array([0, 0.444444, 0.888889, 1.33333, 1.77778, 2.22222, 2.66667, 3.11111, 3.55556, 4])
-  #
-  # Partial application with curied lambda functions:
-  # Time: 275ns
-  # array([0, 0.444444, 0.888889, 1.33333, 1.77778, 2.22222, 2.66667, 3.11111, 3.55556, 4])
-  # ------------------------------------------------------------
-  #
-  # Partial application with std::bind:
-  # Time: 188ns
-  # array([0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6])
-  #
-  # Partial application with curied lambda functions:
-  # Time: 144ns
-  # array([0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6])
-  # ------------------------------------------------------------
-  #
-  # Partial application with std::bind:
-  # Time: 151ns
-  # array([2, 2.2, 2.4, 2.6, 2.8])
-  #
-  # Partial application with curied lambda functions:
-  # Time: 131ns
-  # array([2, 2.2, 2.4, 2.6, 2.8])
-  # ------------------------------------------------------------
-  #
-  # Partial application with std::bind:
+
+  # Partial application with std::bind
   # Time: 136ns
+  # array([0, 2, 4, 6])
+  # ------------------------------------------------------------
+
+  # Time: 108ns
+  # array([0, 1.5, 3, 4.5])
+
+  # Partial application with curied lambda functions
+  # Time: 139ns
+  # array([0, 1.5, 3, 4.5])
+
+  # Partial application with std::bind
+  # Time: 166ns
+  # array([0, 1.5, 3, 4.5])
+  # ------------------------------------------------------------
+
+  # Time: 245ns
+  # array([0, 0.444444, 0.888889, 1.33333, 1.77778, 2.22222, 2.66667, 3.11111, 3.55556, 4])
+
+  # Partial application with curied lambda functions
+  # Time: 224ns
+  # array([0, 0.444444, 0.888889, 1.33333, 1.77778, 2.22222, 2.66667, 3.11111, 3.55556, 4])
+
+  # Partial application with std::bind
+  # Time: 265ns
+  # array([0, 0.444444, 0.888889, 1.33333, 1.77778, 2.22222, 2.66667, 3.11111, 3.55556, 4])
+  # ------------------------------------------------------------
+
+  # Time: 192ns
+  # array([0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6])
+
+  # Partial application with curied lambda functions
+  # Time: 168ns
+  # array([0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6])
+
+  # Partial application with std::bind
+  # Time: 212ns
+  # array([0, 0.4, 0.8, 1.2, 1.6, 2, 2.4, 2.8, 3.2, 3.6])
+  # ------------------------------------------------------------
+
+  # Time: 140ns
+  # array([2, 2.2, 2.4, 2.6, 2.8])
+
+  # Partial application with curied lambda functions
+  # Time: 127ns
+  # array([2, 2.2, 2.4, 2.6, 2.8])
+
+  # Partial application with std::bind
+  # Time: 175ns
+  # array([2, 2.2, 2.4, 2.6, 2.8])
+  # ------------------------------------------------------------
+
+  # Time: 131ns
   # array([2, 2.25, 2.5, 2.75, 3])
-  #
-  # Partial application with curied lambda functions:
-  # Time: 125ns
+
+  # Partial application with curied lambda functions
+  # Time: 130ns
   # array([2, 2.25, 2.5, 2.75, 3])
+
+  # Partial application with std::bind
+  # Time: 168ns
+  # array([2, 2.25, 2.5, 2.75, 3])
+  # ------------------------------------------------------------
+
+  # Time: 149ns
+  # array([3, 2.75, 2.5, 2.25, 2])
+
+  # Partial application with curied lambda functions
+  # Time: 132ns
+  # array([3, 2.75, 2.5, 2.25, 2])
+
+  # Partial application with std::bind
+  # Time: 166ns
+  # array([3, 2.75, 2.5, 2.25, 2])
 #+END_SRC
 
 Some useful links:
