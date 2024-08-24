@@ -118,3 +118,14 @@ Some useful links:
 - https://habr.com/en/articles/436488/
 - https://en.cppreference.com/w/cpp/utility/functional/bind
 - https://learn.microsoft.com/en-us/cpp/cpp/lambda-expressions-in-cpp?view=msvc-170#capture-clause
+
+** Using nix
+
+Inspired by [[https://nixcademy.com/posts/cpp-with-nix-in-2023-part-1-shell/][link]].
+
+#+BEGIN_SRC bash
+  nix develop
+#+END_SRC
+
+*It does not work properly with C++ 23. For example, I can't use the [[https://en.cppreference.com/w/cpp/header/print][print]]
+ library header.
